@@ -7,3 +7,9 @@
 ## 在线阅读
 
 本算法模板主要参考自[greyireland](https://github.com/greyireland)的[algorithm-pattern](https://github.com/greyireland/algorithm-pattern)项目，将其Go语言代码翻译成JavaScript语言代码。
+
+## 核心内容
+
+#### 数据结构篇 🐢
+
+- [二叉树](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AF%87/%E4%BA%8C%E5%8F%89%E6%A0%91.md)
