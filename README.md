@@ -13,3 +13,8 @@
 #### 数据结构篇 🐢
 
 - [二叉树](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AF%87/%E4%BA%8C%E5%8F%89%E6%A0%91.md)
+- [链表](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AF%87/%E9%93%BE%E8%A1%A8.md)
+
+- [栈和队列](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AF%87/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97.md)
+- [二进制](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AF%87/%E4%BA%8C%E8%BF%9B%E5%88%B6.md)
+
