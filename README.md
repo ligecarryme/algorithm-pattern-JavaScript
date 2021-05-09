@@ -25,3 +25,7 @@
 
 ### 算法思维篇 🦁
 
+- [递归思维](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4/%E9%80%92%E5%BD%92%E6%80%9D%E7%BB%B4.md)
+- [滑动窗口思想]()
+- [二叉搜索树]()
+- [回溯法]()
