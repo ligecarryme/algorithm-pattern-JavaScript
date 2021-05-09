@@ -26,6 +26,7 @@
 ### 算法思维篇 🦁
 
 - [递归思维](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4/%E9%80%92%E5%BD%92%E6%80%9D%E7%BB%B4.md)
-- [滑动窗口思想]()
-- [二叉搜索树]()
-- [回溯法]()
+- [滑动窗口思想](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%80%9D%E6%83%B3.md)
+- [二叉搜索树](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.md)
+- [回溯法](https://github.com/ligecarryme/algorithm-pattern-JavaScript/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4/%E5%9B%9E%E6%BA%AF%E6%B3%95.md)
+
