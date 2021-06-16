@@ -13,20 +13,55 @@
 
 #### 选择排序
 
-```java
-
+```tsx
+const selectSort = function (nums: number[]) {
+	const len = nums.length
+	for (let i = 0; i < len; i++) {
+		let min = i
+		for (let j = i + 1; j < len; j++) {
+			if (nums[j] < nums[min]) {
+				min = j
+			}
+		}
+		;[nums[i], nums[min]] = [nums[min], nums[i]]
+	}
+	return nums
+}
 ```
 
 #### 冒泡排序
 
-```java
-
+```tsx
+const bubbleSort = function (arrs: number[]) {
+	const len = arrs.length
+	let isSortFlag = false // 如果排好序只需遍历一遍
+	for (let i = len - 1; i > 0 && !isSortFlag; i--) {
+		isSortFlag = true
+		for (let j = 0; j < i; j++) {
+			if (arrs[j] > arrs[j + 1]) {
+				isSortFlag = false
+				;[arrs[j], arrs[j + 1]] = [arrs[j + 1], arrs[j]]
+			}
+		}
+	}
+	return arrs
+}
 ```
 
 #### 插入排序
 
-```java
-
+```tsx
+const insertSort = function (nums: number[]) {
+	const len = nums.length
+	for (let i = 1; i < len; i++) {
+		for (let j = i; j > 0; j--) {
+			if (nums[j] < nums[j - 1]) {
+				;[nums[j], nums[j - 1]] = [nums[j - 1], nums[j]]
+			}
+		}
+	}
+	return nums
+}
 ```
 
 #### 希尔排序
