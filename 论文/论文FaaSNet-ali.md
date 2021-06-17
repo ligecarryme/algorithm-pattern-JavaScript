@@ -16,7 +16,7 @@ FaaS平台最具吸引力的是资源弹性，允许用户程序在几秒内按�
 
 2.1 工作流
 
-![](/Users/didi/Desktop/leetcode/论文/image/workflows.png)
+![](./image/workflows.png)
 
 2.2 工作负载分析
 
