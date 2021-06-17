@@ -73,13 +73,37 @@ const insertSort = function (nums: number[]) {
 #### 归并排序
 
 ```java
-
+ 
 ```
 
 #### 快速排序
 
 ```java
-
+const quickSort = (nums: number[], start: number, end: number) => {
+	let left = start,
+		right = end
+	const pivot = start
+	while (left < right) {
+		while (left < right && nums[right] > nums[pivot]) {
+			right--
+		}
+		while (left < right && nums[left] < nums[pivot]) {
+			left++
+		}
+		if (nums[left] === nums[right] && left < right) {
+			left++
+		} else {
+			;[nums[left], nums[right]] = [nums[right], nums[left]]
+		}
+	}
+	if (start < left - 1) {
+		quickSort(nums, start, left - 1)
+	}
+	if (right + 1 < end) {
+		quickSort(nums, right + 1, end)
+	}
+	return nums
+}
 ```
 
 #### 堆排序
