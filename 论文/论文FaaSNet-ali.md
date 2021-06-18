@@ -52,7 +52,7 @@ FT元数据管理：内存映射表<functionId, FT>，FT数据结构管理功能
 
 容器配置协议：在调用请求中，如果调度器检测到没有足够的VM服务请求，或者是当前所有的VMs都很忙，会在空闲的VM池里启动一个或者多个VMs进入容器配置流程。假定VM1是新建的，需要下载配置信息及镜像，VM2是给VM1提供的容器。
 
-![](/Users/didi/Desktop/leetcode/论文/image/容器配置协议.png)
+![](./image/容器配置协议.png)
 
 FT容错：如果VM关闭了，调度器会通知FT管理器去调整FT的结构拓扑。
 
@@ -79,3 +79,4 @@ RPC和数据流：构建了一个用户级，零copy的RPC库，实现请求流�
 将FaaSNet与kraken，baseline，on-demand，DADI+P2P进行比较。
 
 4.2 FaaS应用工作负载
+
