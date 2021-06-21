@@ -147,3 +147,20 @@ Knative内部生态有三大组件组成，分别是：
 - [Build](https://github.com/knative/build) **负责提供标准模板，从源码仓库到镜像构建到镜像仓库（PS：在v0.8.0后由Tekton Pipelines项目替代）**
 - [Eventing](https://github.com/knative/eventing) **服务事件驱动，将服务绑定到事件，对发布/订阅进行抽象**
 - [Serving](https://github.com/knative/serving) **动态调整工作负载流量版本切分，还有log/metrics/tracing/monitor模块**
+
+
+
+
+
+
+
+
+
+## FaaS 运行机制
+
+代码下载-->启动容器-->初始化环境（前三个阶段冷启动）-->运行代码（热启动）
+
+热启动执行上下文重用（实例复用），需要保证云函数无状态性，即当前运行的函数不能依赖上个函数运行时的残留信息。
+
+![](./image/冷热启动.png)
+
