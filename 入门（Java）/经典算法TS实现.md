@@ -78,7 +78,7 @@ const insertSort = function (nums: number[]) {
 
 #### 快速排序
 
-```java
+```tsx
 const quickSort = (nums: number[], start: number, end: number) => {
 	let left = start,
 		right = end
