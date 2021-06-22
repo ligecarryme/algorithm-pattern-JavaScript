@@ -1,3 +1,5 @@
+[TOC]
+
 ### 排序算法
 
 |       算法       | 稳定 | 原地排序 |          时间复杂度          | 空间复杂度 |           备注           |
@@ -66,43 +68,71 @@ const insertSort = function (nums: number[]) {
 
 #### 希尔排序
 
-```java
-
+```tsx
+const shellSort = (nums: number[]) => {
+  const len = nums.length
+  let h = len >> 1
+  while (h >= 1) {
+    for (let i = h; i < len; i++) {
+      for (let j = i; j >= h && nums[j] < nums[j - h]; j -= h) {
+        [nums[j], nums[j - h]] = [nums[j - h], nums[j]]
+      }
+    }
+    h >>= 1
+  }
+}
 ```
 
 #### 归并排序
 
-```java
- 
+```tsx
+const mergeSort = (nums: number[], left: number, right: number) => {
+  if (left === right) return [nums[left]]
+  const mid = left + ((right - left) >> 1)
+  const leftArray = mergeSort(nums, left, mid)
+  const rightArray = mergeSort(nums, mid + 1, right)
+  const newArray: number[] = new Array(leftArray.length + rightArray.length)
+  let i = 0, j = 0, k = 0
+  while (i < leftArray.length && j < rightArray.length) {
+    newArray[k++] = leftArray[i] < rightArray[j] ? leftArray[i++] : rightArray[j++]
+  }
+  while (i < leftArray.length) {
+    newArray[k++] = leftArray[i++]
+  }
+  while (j < rightArray.length) {
+    newArray[k++] = rightArray[j++]
+  }
+  return newArray
+}
 ```
 
 #### 快速排序
 
 ```tsx
 const quickSort = (nums: number[], start: number, end: number) => {
-	let left = start,
-		right = end
-	const pivot = start
-	while (left < right) {
-		while (left < right && nums[right] > nums[pivot]) {
-			right--
-		}
-		while (left < right && nums[left] < nums[pivot]) {
-			left++
-		}
-		if (nums[left] === nums[right] && left < right) {
-			left++
-		} else {
-			;[nums[left], nums[right]] = [nums[right], nums[left]]
-		}
-	}
-	if (start < left - 1) {
-		quickSort(nums, start, left - 1)
-	}
-	if (right + 1 < end) {
-		quickSort(nums, right + 1, end)
-	}
-	return nums
+  let left = start,
+    right = end
+  const pivot = nums[start]
+  while (left < right) {
+    while (left < right && nums[right] > pivot) {
+      right--
+    }
+    while (left < right && nums[left] < pivot) {
+      left++
+    }
+    if (nums[left] === nums[right] && left < right) {
+      left++
+    } else {
+      ;[nums[left], nums[right]] = [nums[right], nums[left]]
+    }
+  }
+  if (start < left - 1) {
+    quickSort(nums, start, left - 1)
+  }
+  if (right + 1 < end) {
+    quickSort(nums, right + 1, end)
+  }
+  return nums
 }
 ```
 
