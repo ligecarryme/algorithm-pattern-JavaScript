@@ -110,8 +110,8 @@ const mergeSort = (nums: number[], left: number, right: number) => {
 
 ```tsx
 const quickSort = (nums: number[], start: number, end: number) => {
-  let left = start,
-    right = end
+  let left = start
+  let right = end
   const pivot = nums[start]
   while (left < right) {
     while (left < right && nums[right] > pivot) {
@@ -123,7 +123,7 @@ const quickSort = (nums: number[], start: number, end: number) => {
     if (nums[left] === nums[right] && left < right) {
       left++
     } else {
-      ;[nums[left], nums[right]] = [nums[right], nums[left]]
+      [nums[left], nums[right]] = [nums[right], nums[left]]
     }
   }
   if (start < left - 1) {
